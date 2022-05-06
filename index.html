@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-site-verification" content="BDv_jliWMwXTmjGS__YRsyfgqMtLs4nY95DVyvyUpiw" />
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Jules PASCUAL-RAMON Portfolio</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Jules</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link" style="@media screen and (min-width: 769px) {font-size: .813rem;}">
+                                <i class="uil uil-user nav__icon"></i> À propos de moi
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> Compétences
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#qualification" class="nav__link">
+                                <i class="uil uil-book-alt nav__icon"></i> Parcours Professionel
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#veille" class="nav__link" style="@media screen and (min-width: 769px) {font-size: .813rem;}"> 
+                                <i class="uil uil-newspaper nav__icon"></i> Veille
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link" style="@media screen and (min-width: 769px) {font-size: .813rem;}"> 
+                                <i class="uil uil-message nav__icon"></i> Me Contacter
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns"></div>
+                    <!--Theme Change button-->
+                    <!--<i class="uil uil-moon change-theme" id="theme-button"></i>-->
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.instagram.com/julespr.66/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-instagram"></i>
+                            </a>
+                            <a href="https://gitlab.com/Jules_PR" target="_blank" class="home__social-icon">
+                                <i class="uil uil-gitlab"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jules-pascual-ramon-1b9707220/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__img">
+                            <svg class='home__blob' viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    <image class="home__blob-img" href="assets/img/p.png"/>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">Jules <br> PASCUAL-RAMON</h1>
+                            <h3 class="home__subtitle">Étudiant en développement</h3>
+                            <p class="home__description">2ème année de BTS SIO option SLAM, produit également des applications en autodidacte.</p>
+                            <a href="#contact" class="button button--flex">
+                                Contactez Moi <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                        <div class="home__scroll">
+                            <a href="#about" class="home__scroll-button button--flex">
+                                <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                                <span class="home__scroll-name">Scroll</span>
+                                <i class="uil uil-angle-down home__scroll-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">À propos de moi</h2>
+                <span class="section__subtitle">Mon introduction</span>
+
+                <div class="about__container container ">
+
+                    <div class="about__data">
+                        <p class="about__description">Je suis étudiant en 2ème année de BTS SIO (services informatiques aux organisations) option SLAM (solutions logicielles et applications métiers). J'ai également des projets en développement à coté des cours.</p>
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">3</span>
+                                <span class="about__info-name">Mois <br> d'experience professionelle</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">4</span>
+                                <span class="about__info-name">Projets <br> complétés</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">3</span>
+                                <span class="about__info-name">Stages <br> en entreprise d'informatique</span>
+                            </div>
+                        </div>
+
+                        <div class="about__buttons">
+                            <a dowload="" href="assets/pdf/PASCUAL-RAMON Jules CV.pdf" class="button button--flex">
+                                Télécharger mon CV<i class="uil uil-file-download button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== COMPETENCES ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Compétences</h2>
+                <span class="section__subtitle">Mon niveau technique</span>
+
+                <div class="skills__container container grid">
+                    <div>
+                        <!--==================== SKILLS 1 ====================-->
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-server-network skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Développeur Backend</h1>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">PHP - Symfony</h3>
+                                    </div>
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Ruby - Ruby on Rails</h3>
+                                    </div>
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">SQL - MySQL - phpMyAdmin</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--==================== SKILLS 2 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-window skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Développeur Frontend</h1>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML</h3>
+                                    </div>
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">CSS - Bootstrap</h3>
+                                    </div>
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">JavaScript - jQuery - ChartJS</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!--==================== SKILLS 3 ====================-->
+                     <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-mobile-android-alt skills__icon"></i>
+                            
+                            <div>
+                                <h1 class="skills__title">Développeur Mobile</h1>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Java - Android Studio</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!--==================== SKILLS 4 ====================-->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-process skills__icon"></i>
+                        
+                        <div>
+                            <h1 class="skills__title">DevOps</h1>
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+                    
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Git - GitLab</h3>
+                            </div>
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Intégration continue</h3>
+                            </div>
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Déploiement continue</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section" id="qualification">
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle">Mon Parcours Professionel</span>
+
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Études
+                        </div>
+
+                        <div class="qualification__button button--flex" data-target='#work'>
+                            <i class="uil uil-briefcase-alt qualification__icon"></i>
+                            Stages
+                        </div>
+                    </div>
+
+                    <div class="qualification__sections">
+                        <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                        <div class="qualification__content qualification__active" data-content id="education">
+
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Bac STI2D SIN</h3>
+                                    <span class="qualification__subtitle">Perpignan - Lycée Pablo Picasso</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2018 - 2020
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                             <!--==================== QUALIFICATION 2 ====================-->
+                             <div class="qualification__data">
+                                 <div></div>
+
+                                 <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">BTS SIO SLAM</h3>
+                                    <span class="qualification__subtitle">Perpignan - Lycée Jean Lurçat</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2020 - 2022
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!--==================== QUALIFICATION 3 ====================-->
+                             <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Bachelor 3 dev<br>(à venir)</h3>
+                                    <span class="qualification__subtitle">Toulouse - Ynov Campus</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2022 - 2023
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                             <!--==================== QUALIFICATION 4 ====================-->
+                             <div class="qualification__data">
+                                 <div></div>
+                                
+                                 <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Mastère dev web<br>(à venir)</h3>
+                                    <span class="qualification__subtitle">Toulouse - Ynov Campus</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2023 - 2025
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                        <div class="qualification__content" data-content id="work">
+
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Stage d'informatique</h3>
+                                    <span class="qualification__subtitle">Micro-Impact - Antony</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2016 (1 semaine)
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                             <!--==================== QUALIFICATION 2 ====================-->
+                             <div class="qualification__data">
+                                 <div></div>
+
+                                 <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Stage de Dev</h3>
+                                    <span class="qualification__subtitle">ISEEU - Perpignan</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2021 (5 semaines)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 3 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Stage de Dev</h3>
+                                    <span class="qualification__subtitle">ISEEU - Perpignan</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2022 (6 semaines)
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                             <!--==================== QUALIFICATION 4 ====================-->
+                             <div class="qualification__data">
+                                <div></div>
+                               
+                                <div>
+                                   <span class="qualification__rounder"></span>
+                                   <!-- <span class="qualification__line"></span> -->
+                               </div>
+
+                               <div>
+                                   <h3 class="qualification__title">CDD Dev Web<br>(à venir)</h3>
+                                   <span class="qualification__subtitle">ISEEU - Perpignan</span>
+                                   <div class="qualification__calendar">
+                                       <i class="uil uil-calendar-alt"></i>
+                                       2022 (2 mois)
+                                   </div>
+                               </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Mes travaux</span>
+
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== PORTFOLIO 1 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/nexloop.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">nexLoop éligibilité</h3>
+                                <p class="portfolio__description">Test d'éligibilité à la fibre optique.</p>
+                                <a href="https://eligibilite.nexloop.fr/" target='blank' class="button button--flex button--small portfolio__button">
+                                    Voir le site
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 2 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/ezJob.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">ezJob</h3>
+                                <p class="portfolio__description">Plateforme de recrutement inspirée du site <a href='indeed'>indeed</a></p>
+                                <a href="https://ez-job-rails.herokuapp.com/" target='blank' class="button button--flex button--small portfolio__button">
+                                    Voir le site
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 3 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/matete.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Matete</h3>
+                                <p class="portfolio__description">Application et site web de ventes de fruits et légumes.</p>
+                                <a href="/projets/projet3.html" class="button button--flex button--small portfolio__button">
+                                    Voir plus
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                         <!--==================== PORTFOLIO 4 ====================-->
+                         <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/talk-crypto.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Talk-Crypto</h3>
+                                <p class="portfolio__description">Forum et statistiques de cryptomonnaies</p>
+                                <a href="/projets/projet6.html" class="button button--flex button--small portfolio__button">
+                                    Voir plus
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 5 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/sizematters.jpg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">SizeMatte.rs PDF</h3>
+                                <p class="portfolio__description">PDF de statistiques.</p>
+                                <a href="/projets/projet4.html" class="button button--flex button--small portfolio__button">
+                                    Voir plus
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 6 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/mail.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Application web d'IP Warm-Up</h3>
+                                <p class="portfolio__description">Application web destinée à augmenter la "réputation" d'adresses IP auprès des services de messageries.</p>
+                                <a href="/projets/projet2.html" class="button button--flex button--small portfolio__button">
+                                    Voir plus
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            
+            <!--==================== VEILLE ====================-->
+            <section style='margin-top:5%' class="project section" id="veille">
+                <h2 class="section__title">Extraits de ma veille Technologique</h2>
+                <span class="section__subtitle">Failles de sécurité sur Wordpress</span>
+
+                <div class="project__container container grid">
+                    <div class="project__data">
+                        <div class="project__part container grid">
+                            <img style='margin-bottom:3%;' src="/assets/img/wordpress.jpg" alt="" class="project__img">
+                            <!--==================== DESCRIPTION ====================-->
+                            <div>
+                                <h3>Plugins LMS</h3>
+                                <h5 style='margin-bottom:1%;'>4 Mai 2020</h5>
+                                <div>
+                                    <p>LearnPress, LearnDash, et LifterLMS sont des plugins populaires de WordPress, ce sont des learning management systems (LMS), utilisés à des fins éducatives et de plus en plus adoptés dû au COVID et donc à l'apprentissage à distance.<br><br>
+
+                                        Check Point a trouvé quatre vulnérabilités à ces plugins (CVE-2020-6008, CVE-2020-6009, CVE-2020-6010, et CVE-2020-6011) allant de l'escalade de privilèges à l'exécution de code à distance (RCE). Ces failles permettent le vol de données sensibles sur les étudiants inscrits, la falsification de devoirs et de certificats, la modification de notes et potentiellement le détournement de l'argent des plateformes LMS offrant des cours payants, tout cela en n'étant pas authentifié.<br><br>
+                                    
+                                    Ces trois plugins cumulaient ~133 000 installations actives lors de la découverte de Check Point.</p>
+                                </div>
+                                <h4  style='margin-top:1%;'><a href='https://www.zdnet.fr/actualites/des-vulnerabilites-dans-les-plugins-wordpress-conduisent-a-un-detournement-de-plateforme-d-e-learning-39903095.htm'>Source : ZDNet</a></h4>
+                            </div>
+                            <hr>
+                            <div>
+                                <h3>Essential Addons for Elementor</h3>
+                                <h5 style='margin-bottom:1%;'>31 Janvier 2022</h5>
+                                <div>
+                                    <p>Essential Addons for Elementor, un plugin WordPress populaire utilisé dans plus d'un million de sites, présente une vulnérabilité critique d'exécution de code à distance (RCE) dans la version 5.0.4 et les versions antérieures.<br><br>
+
+                                        La faille trouvée par PatchStack permet à un utilisateur non authentifié d'effectuer une attaque par inclusion de fichier local, tel qu'un fichier PHP, pour exécuter du code sur le site.
+                                        La seule condition préalable à l'attaque est que le site ait les widgets "galerie dynamique" et "galerie de produits".<br><br>
+                                        
+                                        La faille du plugin est corrigée 3 jours après sa découverte (version 5.0.5) et ~380 000 sites feront rapidement la mise à jour, laissant donc ~600 000 sites avec le plugin obsolète sur une durée de plus d'une semaine.</p>
+                                </div>
+                                <h4  style='margin-top:1%;'><a href='https://www.bleepingcomputer.com/news/security/600k-wordpress-sites-impacted-by-critical-plugin-rce-vulnerability/'>Source : BleepingComputer</a></h4>
+                            </div>
+                            <hr>
+                            <div>
+                                <h3>Hausse du nombre de vulnérabilités détectées en 2021</h3>
+                                <h5 style='margin-bottom:1%;'>28 mars 2022</h5>
+                                <div>
+                                    <p>
+                                        Cet article donne les chiffres de PatchStack sur les failles de Wordpress en 2021:<br><br>
+                                        -1500 nouvelles failles découvertes dans les plugins, les thèmes et le coeur de WordPress (vs 600 en 2020)<br>
+                                        -92.81% des failles proviennent de plugins et 6.61% proviennent de thèmes.<br>
+                                        -49.82% soit près d'une faille sur deux est une faille XSS<br>
+                                        -42% des sites WordPress ont déjà installé un composant vulnérable au cours de l'année 2021.<br>
+                                        -29% des thèmes et plugins vulnérables ne présentent pas de correctif<br><br>
+                                        
+                                        All In One SEO (optimisation de référencement) est le plugin vulnérable le plus utilisé avec 3M d'installations actives, celui-ci contenant une faille d'injection SQL et une faille d'élévation de privilèges dans ses versions antérieures à la version 4.1.5.3.
+                                    </p>
+                                </div>
+                                <h4  style='margin-top:1%;'><a href='https://www.blogdumoderateur.com/wordpress-hausse-vulnerabilites-detectees-2021/'>Source : BDM</a></h4>
+                            </div>
+                        </div>
+                    <div class="project__part container grid">
+                    </div>
+            </section>
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Me Contacter</h2>
+                <span class="section__subtitle">Vous souhaitez entrer en contact avec moi?</span>
+                    <div style="text-align:center">
+                        <div class="contact__information">
+                            <i style='margin-left:6px' class="uil uil-envelope contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">j.pascualramon.etude@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i style='margin-left:6px' class="uil uil-map-marker contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Localisation</h3>
+                                <span class="contact__subtitle">France - Perpignan - 66</span>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container">
+                    <h1 class="footer__title">Jules <br> PASCUAL-RAMON</h1>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Me Contacter</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.instagram.com/julespr.66/" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://gitlab.com/Jules_PR" target="_blank" class="footer__social">
+                        <i class="uil uil-gitlab"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jules-pascual-ramon-1b9707220/" target="_blank" class="footer__social">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="/assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+</html>

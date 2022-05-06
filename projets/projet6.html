@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="/assets/css/styles.css">
+
+        <title>Talk-Crypto</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="index.html#home" class="nav__logo">Jules</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="/index.html#home" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/index.html#about" class="nav__link" style="font-size: .813rem;">
+                                <i class="uil uil-user nav__icon"></i> À propos de moi
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/index.html#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> Compétences
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/index.html#qualification" class="nav__link">
+                                <i class="uil uil-book-alt nav__icon"></i> Parcours Professionel
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/index.html#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/index.html#veille" class="nav__link" style="@media screen and (min-width: 769px) {font-size: .813rem;}"> 
+                                <i class="uil uil-newspaper nav__icon"></i> Veille
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/index.html#contact" class="nav__link" style="font-size: .813rem;"> 
+                                <i class="uil uil-message nav__icon"></i> Me Contacter
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns"></div>
+                    <!--Theme Change button-->
+                    <!--<i class="uil uil-moon change-theme" id="theme-button"></i>-->
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== PROJECT ====================-->
+        <section class="project section" id="project">
+            <h2 class="section__title">Talk-Crypto</h2>
+            <span class="section__subtitle">Forum et statistique de cryptomonnaies</span>
+
+            <div class="project__container container grid">
+                <div class="project__data">
+                    <h3 class="project__info">C'est quoi?</h3>
+                    <div class="project__part container grid">
+                        <img src="/assets/img/talk-crypto.png" alt="" class="project__img">
+                        <!--==================== DESCRIPTION ====================-->
+                        <div>
+                            <p class="project__description">Talk-Crypto est un forum sur le thème de la cryptomonnaie où tout le monde est libre de poster des articles. 
+                                Le site propose également une option permettant d'afficher des informations (graphique des prix, description) sur une cryptomonnaie choisie.
+                             Le site est fait avec le framework Ruby on Rails et le framework chartJS pour les graphiques. Les données sur les cryptomonnaies proviennent de <a href='https://www.coingecko.com/fr/api'>l'API CoinGeko</a>.
+                            Le projet existe également sous forme d'application de bureau pour Ubuntu, faite avec le framework Electron. Ceci est un projet personnel réalisé dans le but d'auto-évaluer et augmenter mes compétences.</p>
+                        </div>                                
+                    </div>
+                    <div class="project__part container grid">
+                    </div>
+                    <div class="project__part container grid">
+                        <h3 class="project__info">Fonctionnalités</h3>
+                        <!--==================== FONCTIONNALITES ====================-->
+                        <div class="fonc__container container grid">
+                            <!--==================== FONCTIONNALITES 1 ====================-->
+                            <div class="fonc__content">
+                                <i class="uil uil-comment-lines fonc__icon"></i>
+                                <h3 class="fonc__title">Publier des posts <br> et des réponses</h3>
+                            
+
+                                <span class="button button--flex button--small button--link fonc__button">
+                                    Voir Plus
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </span>
+
+                                <div class="fonc__modal">
+                                    <div class="fonc__modal-content">
+                                        <h4 class="fonc__modal-title">Poster sur le forum</h4>
+                                        <i class="uil uil-times fonc__modal-close"></i>
+
+                                        <ul class="fonc__modal-services grid">
+                                            <li class="fonc__modal-fonc">
+                                                <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                                <p>Créer un compte</p>
+                                            </li>
+                                            <li class="fonc__modal-fonc">
+                                                <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                                <p>Poster ses propres posts</p>
+                                            </li>
+                                            <li class="fonc__modal-fonc">
+                                                <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                                <p>Répondre à des posts</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--==================== FONCTIONNALITES 2 ====================-->
+                            <div class="fonc__content">
+                                <i class="uil uil-bitcoin-sign fonc__icon"></i>
+                                <h3 class="fonc__title">Suivre le cours <br> d'une cryptomonnaie</h3>
+                            
+
+                                <span class="button button--flex button--small button--link fonc__button">
+                                    Voir Plus
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </span>
+
+                                <div class="fonc__modal">
+                                    <div class="fonc__modal-content">
+                                        <h4 class="fonc__modal-title">S'informer sur une ou plusieurs cryptomonnaie(s)</h4>
+                                        <i class="uil uil-times fonc__modal-close"></i>
+
+                                        <ul class="fonc__modal-services grid">
+                                            <li class="fonc__modal-fonc">
+                                                <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                                <p>Voir le graphique des prix sur une durée choisie</p>
+                                            </li>
+                                            <li class="fonc__modal-fonc">
+                                                <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                                <p>Voir une description sur la cryptomonnaie choisie</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h3 class="project__info">Aperçu de l'option apportant des informations sur une <br> cryptomonnaie (en en choisissant 3 sur une durée de 90 jours dans le cas suivant) : </h3>
+        <div style= "display: flex;justify-content: center;align-items: center;">
+            <img src="/assets/img/graph.PNG">
+        </div>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container">
+                    <h1 class="footer__title">Jules <br> PASCUAL-RAMON</h1>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="/index.html#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="/index.html#contact" class="footer__link">Me Contacter</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.instagram.com/julespr.66/" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://gitlab.com/Jules_PR" target="_blank" class="footer__social">
+                        <i class="uil uil-gitlab"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jules-pascual-ramon-1b9707220/" target="_blank" class="footer__social">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="/assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="/assets/js/main.js"></script>
+    

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="/assets/css/styles.css">
+
+        <title>Matete</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="index.html#home" class="nav__logo">Jules</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="/index.html#home" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/index.html#about" class="nav__link" style="font-size: .813rem;">
+                                <i class="uil uil-user nav__icon"></i> À propos de moi
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/index.html#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> Compétences
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/index.html#qualification" class="nav__link">
+                                <i class="uil uil-book-alt nav__icon"></i> Parcours Professionel
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/index.html#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/index.html#veille" class="nav__link" style="@media screen and (min-width: 769px) {font-size: .813rem;}"> 
+                                <i class="uil uil-newspaper nav__icon"></i> Veille
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/index.html#contact" class="nav__link" style="font-size: .813rem;"> 
+                                <i class="uil uil-message nav__icon"></i> Me Contacter
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns"></div>
+                    <!--Theme Change button-->
+                    <!--<i class="uil uil-moon change-theme" id="theme-button"></i>-->
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== PROJECT ====================-->
+        <section class="project section" id="project">
+            <h2 class="section__title">Matete</h2>
+            <span class="section__subtitle">Application mobile et site web de ventes de fruits et légumes</span>
+
+            <div class="project__container container grid">
+                <div class="project__data">
+                    <h3 class="project__info">C'est quoi?</h3>
+                    <div class="project__part container grid">
+                        <img src="/assets/img/matete.png" alt="" class="project__img">
+                        <!--==================== DESCRIPTION ====================-->
+                        <div>
+                            <p class="project__description">Matete est une plateforme destinée à la vente de légumes entre
+                                 particuliers via des annonces. Elle propose un site web Symfony ainsi qu'une application
+                                 mobile dévelopée sur Android Studio reliée au serveur mySQL via une API en PHP. L'integration continue (tests unitaires et revues de code) est mise en place pour ce projet, ainsi que le deploiement continu, tout cela via Gitlab.</p>
+                   
+                        </div>                                
+                    </div>
+                    <div class="project__part container grid">
+                    </div>
+                    <div class="project__part container grid">
+                        <h3 class="project__info">Fonctionnalités du site web Symfony</h3>
+                        <!--==================== FONCTIONNALITES WEB ====================-->
+                        <div class="fonc__container container grid">
+                            <!--==================== FONCTIONNALITES 1 ====================-->
+                            <div class="fonc__content">
+                                <i class="uil uil-user-plus fonc__icon"></i>
+                                <h3 class="fonc__title">Creer un <br> compte vendeur</h3>
+                            
+                                <span class="button button--flex button--small button--link fonc__button">
+                                    Voir Plus
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </span>
+
+                                <div class="fonc__modal">
+                                    <div class="fonc__modal-content">
+                                        <h4 class="fonc__modal-title">Créer un compte</h4>
+                                        <i class="uil uil-times fonc__modal-close"></i>
+
+                                        <ul class="fonc__modal-services grid">
+                                            <li class="fonc__modal-fonc">
+                                                <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                                <p>Créer un compte vendeur</p>
+                                            </li>
+                                            <li class="fonc__modal-fonc">
+                                                <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                                <p>Pouvoir se connecter à son compte</p>
+                                            </li>
+                                            <li class="fonc__modal-fonc">
+                                                <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                                <p>Gérer son compte</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--==================== FONCTIONNALITES 2 ====================-->
+                            <div class="fonc__content">
+                                <i class="uil uil-shopping-basket fonc__icon"></i>
+                                <h3 class="fonc__title">Vendre ses <br> légumes</h3>
+                            
+
+                                <span class="button button--flex button--small button--link fonc__button">
+                                    Voir Plus
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </span>
+
+                                <div class="fonc__modal">
+                                    <div class="fonc__modal-content">
+                                        <h4 class="fonc__modal-title">Vendre ses légumes</h4>
+                                        <i class="uil uil-times fonc__modal-close"></i>
+
+                                        <ul class="fonc__modal-services grid">
+                                            <li class="fonc__modal-fonc">
+                                                <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                                <p>Créer des annonces de vente de légumes</p>
+                                            </li>
+                                            <li class="fonc__modal-fonc">
+                                                <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                                <p>Modifier ses annonces</p>
+                                            </li>
+                                            <li class="fonc__modal-fonc">
+                                                <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                                <p>Supprimer ses annonces</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--==================== FONCTIONNALITES 3 ====================-->
+                            <div class="fonc__content">
+                                <i class="uil uil-file-alt fonc__icon"></i>
+                                <h3 class="fonc__title">Consulter les <br> annonces</h3>
+                            
+
+                                <span class="button button--flex button--small button--link fonc__button">
+                                    Voir Plus
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </span>
+
+                                <div class="fonc__modal">
+                                    <div class="fonc__modal-content">
+                                        <h4 class="fonc__modal-title">Consulter les annonces (pas de connexion obligatoire)</h4>
+                                        <i class="uil uil-times fonc__modal-close"></i>
+
+                                        <ul class="fonc__modal-services grid">
+                                            <li class="fonc__modal-fonc">
+                                                <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                                <p>Pouvoir voir toutes les annonces, ainsi que leurs pages de détails</p>
+                                            </li>
+                                            <li class="fonc__modal-fonc">
+                                                <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                                <p>Filtrer les annonces par catégorie (fruit, légume ect...)</p>
+                                            </li>
+                                            <li class="fonc__modal-fonc">
+                                                <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                                <p>Ajouter des annonces dans son panier</p>
+                                            </li>
+                                            <li class="fonc__modal-fonc">
+                                                <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                                <p>Imprimer un récapitulatif de son panier au format PDF, contenant également les infos de contact des vendeurs</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--==================== FONCTIONNALITES 4 ====================-->
+                            <div class="fonc__content">
+                                <i class="uil uil-eye fonc__icon"></i>
+                                <h3 class="fonc__title">Partie administrateur</h3>
+                            
+                                <span class="button button--flex button--small button--link fonc__button">
+                                    Voir Plus
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </span>
+
+                                <div class="fonc__modal">
+                                    <div class="fonc__modal-content">
+                                        <h4 class="fonc__modal-title">Partie administrateur</h4>
+                                        <i class="uil uil-times fonc__modal-close"></i>
+
+                                        <ul class="fonc__modal-services grid">
+                                            <li class="fonc__modal-fonc">
+                                                <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                                <p>Gérer les catégories (fruit, légume ect...)</p>
+                                            </li>
+                                            <li class="fonc__modal-fonc">
+                                                <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                                <p>Suspendre ou supprimer des utilisateurs</p>
+                                            </li>
+                                            <li class="fonc__modal-fonc">
+                                                <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                                <p>Gérer les annonces de tous les utilisateurs</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <h3 class="project__info">Fonctionnalités de l'application mobile android</h3>
+                     <!--==================== FONCTIONNALITES MOBILE ====================-->
+                     <div class="fonc__container container grid">
+                        <!--==================== FONCTIONNALITES 1 ====================-->
+                        <div class="fonc__content">
+                            <i class="uil uil-map fonc__icon"></i>
+                            <h3 class="fonc__title">Récupérer et <br> consulter les <br> annonces </h3>
+                        
+                            <span class="button button--flex button--small button--link fonc__button">
+                                Voir Plus
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </span>
+
+                            <div class="fonc__modal">
+                                <div class="fonc__modal-content">
+                                    <h4 class="fonc__modal-title">Récupérer puis consulter les annonces via une map</h4>
+                                    <i class="uil uil-times fonc__modal-close"></i>
+
+                                    <ul class="fonc__modal-services grid">
+                                        <li class="fonc__modal-fonc">
+                                            <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                            <p>Récupérer toutes les annonces et leurs informations en les prenant sur l'API</p>
+                                        </li>
+                                        <li class="fonc__modal-fonc">
+                                            <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                            <p>Voir les markers des annonces sur une map actualisée en temps réel</p>
+                                        </li>
+                                        <li class="fonc__modal-fonc">
+                                            <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                            <p>Voir les détails d'une annonce après avoir touché le marker</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--==================== FONCTIONNALITES 2 ====================-->
+                        <div class="fonc__content">
+                            <i class="uil uil-search-plus fonc__icon"></i>
+                            <h3 class="fonc__title">Filtrer les <br> annonces</h3>
+                        
+
+                            <span class="button button--flex button--small button--link fonc__button">
+                                Voir Plus
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </span>
+
+                            <div class="fonc__modal">
+                                <div class="fonc__modal-content">
+                                    <h4 class="fonc__modal-title">Filtrer les annonces</h4>
+                                    <i class="uil uil-times fonc__modal-close"></i>
+
+                                    <ul class="fonc__modal-services grid">
+                                        <li class="fonc__modal-fonc">
+                                            <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                            <p>Filtrer les annonces par catégorie (fruit, légume ect...)</p>
+                                        </li>
+                                        <li class="fonc__modal-fonc">
+                                            <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                            <p>Filtrer les annonces par distance avec la géolocalisation de l'appareil (5km, 10km ect...)</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--==================== FONCTIONNALITES 3 ====================-->
+                        <div class="fonc__content">
+                            <i class="uil uil-favorite fonc__icon"></i>
+                            <h3 class="fonc__title">Mettre des annonces <br> en favoris</h3>
+                        
+
+                            <span class="button button--flex button--small button--link fonc__button">
+                                Voir Plus
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </span>
+
+                            <div class="fonc__modal">
+                                <div class="fonc__modal-content">
+                                    <h4 class="fonc__modal-title">Mettre des annonces en favoris</h4>
+                                    <i class="uil uil-times fonc__modal-close"></i>
+
+                                    <ul class="fonc__modal-services grid">
+                                        <li class="fonc__modal-fonc">
+                                            <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                            <p>Pouvoir ajouter/retirer des annonces aux favoris</p>
+                                        </li>
+                                        <li class="fonc__modal-fonc">
+                                            <i class="uil uil-check-circle fonc__modal-icon"></i>
+                                            <p>Consulter ses annonces favorites sur une autre page</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>            
+                </div>
+                <center>
+                    <a class='button button-flex' href='https://gitlab.com/Jules_PR/matete/-/tree/Jules_PASCUAL-RAMON' target='_blank'>Voir sur git <i class="uil uil-gitlab"></i></a><br><br>
+                    <a class='button button-flex' href='http://lycee-gen-technologique.pro.dns-orange.fr:8020/' target='_blank'>Site web<i class="uil uil-arrow-right"></i></a>
+                </center>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container">
+                    <h1 class="footer__title">Jules <br> PASCUAL-RAMON</h1>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="/index.html#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="/index.html#contact" class="footer__link">Me Contacter</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.instagram.com/julespr.66/" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://gitlab.com/Jules_PR" target="_blank" class="footer__social">
+                        <i class="uil uil-gitlab"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jules-pascual-ramon-1b9707220/" target="_blank" class="footer__social">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="/assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="/assets/js/main.js"></script>
+    
