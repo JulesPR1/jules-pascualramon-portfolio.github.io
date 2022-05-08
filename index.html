@@ -47,11 +47,6 @@
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#veille" class="nav__link" style="@media screen and (min-width: 769px) {font-size: .813rem;}"> 
-                                <i class="uil uil-newspaper nav__icon"></i> Veille
-                            </a>
-                        </li>
-                        <li class="nav__item">
                             <a href="#contact" class="nav__link" style="@media screen and (min-width: 769px) {font-size: .813rem;}"> 
                                 <i class="uil uil-message nav__icon"></i> Me Contacter
                             </a>
@@ -523,66 +518,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </section>
-            
-            <!--==================== VEILLE ====================-->
-            <section style='margin-top:5%' class="project section" id="veille">
-                <h2 class="section__title">Extraits de ma veille Technologique</h2>
-                <span class="section__subtitle">Failles de sécurité sur Wordpress</span>
-
-                <div class="project__container container grid">
-                    <div class="project__data">
-                        <div class="project__part container grid">
-                            <img style='margin-bottom:3%;' src="/jules-pascualramon-portfolio.github.io/assets/img/wordpress.jpg" alt="" class="project__img">
-                            <!--==================== DESCRIPTION ====================-->
-                            <div>
-                                <h3>Plugins LMS</h3>
-                                <h5 style='margin-bottom:1%;'>4 Mai 2020</h5>
-                                <div>
-                                    <p>LearnPress, LearnDash, et LifterLMS sont des plugins populaires de WordPress, ce sont des learning management systems (LMS), utilisés à des fins éducatives et de plus en plus adoptés dû au COVID et donc à l'apprentissage à distance.<br><br>
-
-                                        Check Point a trouvé quatre vulnérabilités à ces plugins (CVE-2020-6008, CVE-2020-6009, CVE-2020-6010, et CVE-2020-6011) allant de l'escalade de privilèges à l'exécution de code à distance (RCE). Ces failles permettent le vol de données sensibles sur les étudiants inscrits, la falsification de devoirs et de certificats, la modification de notes et potentiellement le détournement de l'argent des plateformes LMS offrant des cours payants, tout cela en n'étant pas authentifié.<br><br>
-                                    
-                                    Ces trois plugins cumulaient ~133 000 installations actives lors de la découverte de Check Point.</p>
-                                </div>
-                                <h4  style='margin-top:1%;'><a href='https://www.zdnet.fr/actualites/des-vulnerabilites-dans-les-plugins-wordpress-conduisent-a-un-detournement-de-plateforme-d-e-learning-39903095.htm'>Source : ZDNet</a></h4>
-                            </div>
-                            <hr>
-                            <div>
-                                <h3>Essential Addons for Elementor</h3>
-                                <h5 style='margin-bottom:1%;'>31 Janvier 2022</h5>
-                                <div>
-                                    <p>Essential Addons for Elementor, un plugin WordPress populaire utilisé dans plus d'un million de sites, présente une vulnérabilité critique d'exécution de code à distance (RCE) dans la version 5.0.4 et les versions antérieures.<br><br>
-
-                                        La faille trouvée par PatchStack permet à un utilisateur non authentifié d'effectuer une attaque par inclusion de fichier local, tel qu'un fichier PHP, pour exécuter du code sur le site.
-                                        La seule condition préalable à l'attaque est que le site ait les widgets "galerie dynamique" et "galerie de produits".<br><br>
-                                        
-                                        La faille du plugin est corrigée 3 jours après sa découverte (version 5.0.5) et ~380 000 sites feront rapidement la mise à jour, laissant donc ~600 000 sites avec le plugin obsolète sur une durée de plus d'une semaine.</p>
-                                </div>
-                                <h4  style='margin-top:1%;'><a href='https://www.bleepingcomputer.com/news/security/600k-wordpress-sites-impacted-by-critical-plugin-rce-vulnerability/'>Source : BleepingComputer</a></h4>
-                            </div>
-                            <hr>
-                            <div>
-                                <h3>Hausse du nombre de vulnérabilités détectées en 2021</h3>
-                                <h5 style='margin-bottom:1%;'>28 mars 2022</h5>
-                                <div>
-                                    <p>
-                                        Cet article donne les chiffres de PatchStack sur les failles de Wordpress en 2021:<br><br>
-                                        -1500 nouvelles failles découvertes dans les plugins, les thèmes et le coeur de WordPress (vs 600 en 2020)<br>
-                                        -92.81% des failles proviennent de plugins et 6.61% proviennent de thèmes.<br>
-                                        -49.82% soit près d'une faille sur deux est une faille XSS<br>
-                                        -42% des sites WordPress ont déjà installé un composant vulnérable au cours de l'année 2021.<br>
-                                        -29% des thèmes et plugins vulnérables ne présentent pas de correctif<br><br>
-                                        
-                                        All In One SEO (optimisation de référencement) est le plugin vulnérable le plus utilisé avec 3M d'installations actives, celui-ci contenant une faille d'injection SQL et une faille d'élévation de privilèges dans ses versions antérieures à la version 4.1.5.3.
-                                    </p>
-                                </div>
-                                <h4  style='margin-top:1%;'><a href='https://www.blogdumoderateur.com/wordpress-hausse-vulnerabilites-detectees-2021/'>Source : BDM</a></h4>
-                            </div>
-                        </div>
-                    <div class="project__part container grid">
-                    </div>
-            </section>
-
+        
             <!--==================== CONTACT ====================-->
             <section class="contact section" id="contact">
                 <h2 class="section__title">Me Contacter</h2>
