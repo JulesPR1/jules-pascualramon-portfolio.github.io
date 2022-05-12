@@ -311,12 +311,6 @@ visibility:hidden;
     height: 190px;
 }
 
-.me{
-    border: 3px solid #5785E0;
-    border-radius: 50%;
-    height: 300px;
-}
-
 .home__data{
     grid-column: 1/3;
 }
