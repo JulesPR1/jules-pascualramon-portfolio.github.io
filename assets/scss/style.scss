@@ -1,0 +1,104 @@
+$primary: #1a202c;
+
+// loop for font weight 1 to 100
+@for $i from 1 through 9 {
+  .fw-#{$i} {
+    font-weight: $i * 100;
+  }
+}
+
+// loop for font size
+@for $i from 1 through 100 {
+  .fs-#{$i} {
+    font-size: $i * 1px;
+  }
+}
+
+// only for sm or bigger
+@media (min-width: 576px) {
+  .navbar-brand{
+    padding: 0 1em;
+    border-right: 1px solid #e5e7eb;
+  }
+}
+
+.little-separator{
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 3px solid $primary;
+  width: 50px;
+}
+
+nav{
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.section{
+  border-bottom: 1px solid #e5e7eb;
+  padding: 50px 0px;
+}
+
+.btn{
+  border-radius: 4px;
+}
+
+.tech-card{
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  padding: 1em 1.5em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tech-card:hover{
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.05);
+}
+
+.tech-card .text-center {
+  margin-top: auto;
+}
+
+.table-scrollable{
+  height: 100%;
+  overflow: auto;
+}
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+th, td {
+  text-align: left;
+}
+th {
+  white-space: nowrap;
+}
+
+// width loop in px from 1 to 1000
+@for $i from 1 through 1000 {
+  .cw-#{$i} {
+    width: $i * 1px;
+  }
+}
+
+.vertical-separator{
+  border-right: 1px solid red;
+  height: 50px;
+  width: 0px;
+  margin: 0 auto;
+}
+
+.horizontal-separator{
+  border-bottom: 1px solid red;
+  width: 50px;
+  margin: auto 0;
+}
+
+.img-small{
+  width: 110px;
+}
