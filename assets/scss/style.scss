@@ -260,6 +260,13 @@ $c-wrapper-margin: 7%;
   margin-top: $c-wrapper-margin;
 }
 
+// biggger margin for mobile
+@media (max-width: 768px) {
+  .c-wrapper {
+    margin-top: $c-wrapper-margin * 2;
+  }
+}
+
 .nav-link.active {
   color: $light-blue;
 }

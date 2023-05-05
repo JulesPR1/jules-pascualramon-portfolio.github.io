@@ -4666,6 +4666,11 @@ th {
   margin-top: 7%;
 }
 
+@media (max-width: 768px) {
+  .c-wrapper {
+    margin-top: 14%;
+  }
+}
 .nav-link.active {
   color: #95D3FB;
 }
