@@ -444,15 +444,12 @@ body {
     border-right: 1px solid #e5e7eb;
   }
 }
-.little-separator {
-  margin: 0px;
-  padding: 0px;
-  border-bottom: 3px solid #1a202c;
-  width: 50px;
-}
-
 nav {
   border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-link {
+  font-weight: 200;
 }
 
 .section {
@@ -4552,6 +4549,13 @@ th {
   max-width: 200px;
 }
 
+.little-separator {
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 3px solid #95D3FB;
+  width: 50px;
+}
+
 .bg-light-blue {
   background-color: #95D3FB !important;
 }
@@ -4670,6 +4674,22 @@ th {
   .c-wrapper {
     margin-top: calc(7% - 4%);
   }
+}
+
+.nav-link.active {
+  color: #95D3FB;
+}
+
+.fa-gitlab:hover {
+  color: #fc6d26;
+}
+
+.fa-github:hover {
+  color: #7a067a;
+}
+
+.fa-linkedin:hover {
+  color: #0077b5;
 }
 
 /*# sourceMappingURL=style.css.map */

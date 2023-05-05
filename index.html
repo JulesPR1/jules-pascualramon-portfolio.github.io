@@ -6,24 +6,22 @@
     <title>Jules PASCUAL-RAMON</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/css/style.css">
-    
+    <script src="https://kit.fontawesome.com/88c83f0f6c.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm bg-light fixed-top">
+    <nav class="navbar navbar-expand-sm bg-light fixed-top d-flex d-sm-none">
       <div class="container-fluid">
         <a class="navbar-brand d-block d-sm-none" href="#">Jules PASCUAL-RAMON</a>
         <button class="navbar-toggler shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-         
-          <a class="navbar-brand ms-auto d-none d-sm-block" href="#">Jules PASCUAL-RAMON</a>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#technos">Link</a>
+              <a class="nav-link" href="#technos">Technologies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#customers">Clients</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
@@ -39,9 +37,23 @@
       </div>
     </nav>
 
+    <nav class="fixed-top d-flex justify-content-center d-none d-sm-block py-2 bg-light">
+      <div class="col-12 col-sm-12 col-md-9 col-lg-8 col-xl-7 col-xxl-7 mx-auto">
+        <div class="container-fluid d-flex align-items-center">
+          <a class="navbar-brand" href="#">Jules PASCUAL-RAMON</a>
+          <a class="nav-link ms-3 mr-2" href="#technos">Technologies</a>
+          <a class="nav-link mx-2" href="#customers">Clients</a>
+          <a class="nav-link mx-2" href="#">Link</a>
+          <a class="nav-link mx-2" href="#">Link</a>
+          <a class="nav-link mx-2" href="#">Link</a>
+          <a href="#" class="btn btn-sm btn-outline-light-blue ms-auto">Me contacter</a>
+        </div>
+      </div>
+    </nav>  
+
     <div class="container-fluid">
       <div class="row justify-content-center section" id="presentation">
-        <div class="col-12 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-7">
+        <div class="col-12 col-sm-12 col-md-9 col-lg-8 col-xl-7 col-xxl-7">
             <div class="container-fluid">
               <div class="row">
                 <div class="col-12 col-md-6 order-2 order-md-1 mt-3 mt-md-0">
@@ -61,7 +73,7 @@
       </div>
 
       <div class="row justify-content-center section bg-light" id="technos">
-        <div class="col-12 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-7">
+        <div class="col-12 col-sm-12 col-md-9 col-lg-8 col-xl-7 col-xxl-7">
           <div class="container-fluid">
             <div class="row">
               <div class="col-12">
@@ -69,7 +81,7 @@
                 <div class="little-separator"></div>
                 
                 <div class="row">
-                  <h3 class="text-secondary fs-20 mb-0 mt-5">Mes technologies préférées</h3>
+                  <h3 class="text-secondary fs-20 mb-0 mt-5">Mes technologies de prédilection</h3>
                   <div class="col-6 col-sm-4 col-md-3 mt-3">
                     <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
                       <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/rails.png" class="tech-logo w-100 px-4" alt="">
@@ -248,8 +260,8 @@
         </div>
       </div>
 
-      <div class="row justify-content-center section" id="technos">
-        <div class="col-12 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-7">
+      <div class="row justify-content-center section" id="customers">
+        <div class="col-12 col-sm-12 col-md-9 col-lg-8 col-xl-7 col-xxl-7">
             <div class="container-fluid">
               <h1 class="fs-25 fw-5">Clients pour qui j'ai déja travaillé</h1>
               <div class="little-separator"></div>
@@ -279,7 +291,7 @@
                 <div class="col-6 c-wrapper">
                   <div class="px-3 c-image-container">
                     <a href="https://isee-u.fr/" target="_blank">
-                      <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/sm.png" class="c-logo w-100 mt-3" alt="" style="max-width: 300px !important;">
+                      <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/sm.png" class="c-logo w-100 mt-4 mt-md-3" alt="" style="max-width: 300px !important;">
                     </a>
                   </div>
                 </div>
@@ -430,11 +442,59 @@
       </div>
     </div>
 
+    <footer class="bg-light text-center text-lg-start">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-4 offset-lg-1 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">À propos de moi</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis
+              leo at dui luctus, id auctor justo malesuada. Nulla facilisi. Sed
+              consequat lectus a magna tincidunt, vel malesuada lectus maximus.
+            </p>
+          </div>
+    
+          <div class="col-lg-3 offset-lg-1 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Liens utiles</h5>
+    
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#" class="text-dark">Accueil</a>
+              </li>
+              <li>
+                <a href="#technos" class="text-dark">Technologies</a>
+              </li>
+              <li>
+                <a href="#customers" class="text-dark">Clients</a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Réseaux</h5>
+            
+            <div class="d-flex mt-2">
+              <a href="https://git.isee-u.fr/jules" target="_blank" class="mx-2 text-dark"><i class="fa fa-gitlab fs-21"></i></a>
+              <a href="https://github.com/JulesPR1" target="_blank" class="mx-2 text-dark"><i class="fa fa-github fs-21"></i></a>
+              <a href="https://www.linkedin.com/in/jules-pascual-ramon-1b9707220/" target="_blank" class="mx-2 text-dark"><i class="fa fa-linkedin fs-21"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Jules PASCUAL-RAMON | Tous droits réservés
+      </div>
+    </footer>
+    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
       $('.nav-link').on('click',function() {
         $('.navbar-collapse').collapse('hide');
+        $(".nav-link").removeClass("active");
+        $(this).addClass("active");
       });
 
       $('.navbar-brand').on('click',function() {
@@ -447,8 +507,25 @@
           if(target.length) {
             event.preventDefault();
             $('html, body').animate({
-              scrollTop: target.offset().top - 40
+              scrollTop: target.offset().top - 20
             }, 0);
+          }
+        });
+      });
+
+      
+      var navbarLinks = $(".nav-link[href!='#']");
+    
+      $(window).scroll(function() {
+        var scrollPosition = $(window).scrollTop();
+    
+        navbarLinks.each(function() {
+          var currentLink = $(this);
+          var refElement = $(currentLink.attr("href"));
+          if (refElement.offset().top <= scrollPosition && refElement.offset().top + refElement.outerHeight() > scrollPosition) {
+            currentLink.addClass("active");
+          } else {
+            currentLink.removeClass("active");
           }
         });
       });

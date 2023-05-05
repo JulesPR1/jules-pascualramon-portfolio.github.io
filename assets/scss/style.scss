@@ -24,15 +24,12 @@ body { padding-top: 50px; }
   }
 }
 
-.little-separator{
-  margin: 0px;
-  padding: 0px;
-  border-bottom: 3px solid $primary;
-  width: 50px;
-}
-
 nav{
   border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-link{
+  font-weight: 200;
 }
 
 .section{
@@ -139,6 +136,13 @@ th {
 }
 
 $light-blue: #95D3FB;
+
+.little-separator{
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 3px solid $light-blue;
+  width: 50px;
+}
 
 .bg-light-blue {
   background-color: $light-blue !important;
@@ -262,4 +266,20 @@ $c-wrapper-margin: 7%;
   @media only screen and (max-width: 480px) {
     margin-top: calc(#{$c-wrapper-margin} - 4%);
   }
+}
+
+.nav-link.active {
+  color: $light-blue;
+}
+
+.fa-gitlab:hover {
+  color: #fc6d26;
+}
+
+.fa-github:hover {
+  color: #7a067a;
+}
+
+.fa-linkedin:hover {
+  color: #0077b5;
 }
