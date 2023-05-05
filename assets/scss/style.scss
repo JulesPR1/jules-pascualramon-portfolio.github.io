@@ -258,14 +258,6 @@ $c-wrapper-margin: 7%;
 
 .c-wrapper {
   margin-top: $c-wrapper-margin;
-  
-  @media only screen and (max-width: 768px) {
-    margin-top: calc(#{$c-wrapper-margin} - 2%);
-  }
-  
-  @media only screen and (max-width: 480px) {
-    margin-top: calc(#{$c-wrapper-margin} - 4%);
-  }
 }
 
 .nav-link.active {
