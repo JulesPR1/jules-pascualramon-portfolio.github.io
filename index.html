@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jules PASCUAL-RAMON</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm bg-light">
+    <nav class="navbar navbar-expand-sm bg-light fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand d-block d-sm-none" href="#">Jules PASCUAL-RAMON</a>
         <button class="navbar-toggler shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@
           <a class="navbar-brand ms-auto d-none d-sm-block" href="#">Jules PASCUAL-RAMON</a>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#technos">Link</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
@@ -40,178 +40,244 @@
     </nav>
 
     <div class="container-fluid">
-      <div class="row justify-content-center section pt-3 pt-md-5">
-        <div class="col-12 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-6">
+      <div class="row justify-content-center section" id="presentation">
+        <div class="col-12 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-7">
             <div class="container-fluid">
               <div class="row">
                 <div class="col-12 col-md-6 order-2 order-md-1 mt-3 mt-md-0">
-                  <p class="fs-15 fw-7 text-success mb-0">Bienvenue sur mon portfolio!</p>
+                  <p class="fs-15 fw-7 text-light-blue mb-0">Bienvenue sur mon portfolio!</p>
                   <h1 class="fs-25 fw-5">Jules PASCUAL-RAMON</h1>
                   <div class="little-separator"></div>
                   <p class="mt-3">Développeur Web en alternance, je travail à ISEE-U et étudie à l'école d'informatique IPI Blagnac. Je créé également des projets personnels à coté des cours et de mon travail.</p>
                   <div class="d-flex">
-                    <a href="" class="me-1 btn btn-success">Me contacter</a>
-                    <a href="" class="ms-1 btn btn-outline-success">Voir mon CV</a>
+                    <a href="" class="me-1 btn btn-light-blue">Me contacter</a>
+                    <a href="" class="ms-1 btn btn-outline-light-blue">Voir mon CV</a>
                   </div>
                 </div>
-                <div class="col-6 col-md-5 offset-md-1 order-1 order-md-2 d-flex align-items-center"><img src="https://placehold.co/600x400/png" class="mt-0 mt-md-2 w-100 rounded border border-success" alt=""></div>
+                <div class="col-6 col-md-5 offset-md-1 order-1 order-md-2 d-flex align-items-center"><img src="/assets/images/jules.png" class="mt-0 mt-md-2 w-100 rounded border border-light-blue pre-img" alt=""></div>
               </div>
             </div>
         </div>
       </div>
 
-      <div class="row justify-content-center section bg-light">
-        <div class="col-12 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-6">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-12">
-                  <h1 class="fs-25 fw-5">Technologies</h1>
-                  <div class="little-separator"></div>
+      <div class="row justify-content-center section bg-light" id="technos">
+        <div class="col-12 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-7">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="fs-25 fw-5">Technologies</h1>
+                <div class="little-separator"></div>
+                
+                <div class="row">
+                  <h3 class="text-secondary fs-20 mb-0 mt-5">Mes technologies préférées</h3>
+                  <div class="col-6 col-sm-4 col-md-3 mt-3">
+                    <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
+                      <img src="/assets/images/rails.png" class="tech-logo w-100 px-4" alt="">
+                      <span class="badge bg-light-blue tech-info">?</span>
+                      <div class="text-center mt-2">
+                        <p class="fw-bold fs-13 mb-0">Ruby on Rails</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-sm-4 col-md-3 mt-3">
+                    <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
+                      <img src="/assets/images/ruby2.png" class="tech-logo w-100 px-4" alt="">
+                      <span class="badge bg-light-blue tech-info">?</span>
+                      <div class="text-center mt-2">
+                        <p class="fw-bold mb-0">Ruby</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-sm-4 col-md-3 mt-3">
+                    <div class="tech-card" data-bs-toggle="modal" data-bs-target="#strapiModal">
+                      <img src="/assets/images/strapi.png" class="tech-logo w-100 px-4" alt="">
+                      <span class="badge bg-light-blue tech-info">?</span>
+                      <div class="text-center mt-2">
+                        <p class="fw-bold mb-0">Strapi</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-sm-4 col-md-3 mt-3">
+                    <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
+                      <img src="/assets/images/bootstrap.jpg" class="tech-logo w-100 px-4" alt="">
+                      <span class="badge bg-light-blue tech-info">?</span>
+                      <div class="text-center mt-2">
+                        <p class="fw-bold mb-0">Bootstrap</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h3 class="text-secondary fs-20 mb-0 mt-5">Autres technologies utilisées</h3>
                   
-                  <div class="row">
-                    <h3 class="text-secondary fs-20 mb-0 mt-5">Mes technologies préférées</h3>
-                    <div class="col-6 col-sm-4 col-md-3 mt-3">
-                      <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
-                        <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/rails.png" class="tech-logo w-100 px-4" alt="">
-                        <div class="text-center mt-2">
-                          <p class="fw-bold fs-13 mb-0">Ruby on Rails</p>
-                        </div>
+                  <div class="col-6 col-sm-4 col-md-3 mt-3">
+                    <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
+                      <img src="/assets/images/python.png" class="tech-logo w-100 px-4" alt="">
+                      <div class="text-center mt-2">
+                        <p class="fw-bold mb-0">Python</p>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="col-6 col-sm-4 col-md-3 mt-3">
-                      <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
-                        <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/ruby2.png" class="tech-logo w-100 px-4" alt="">
-                        <div class="text-center mt-2">
-                          <p class="fw-bold mb-0">Ruby</p>
-                        </div>
+                  <div class="col-6 col-sm-4 col-md-3 mt-3">
+                    <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
+                      <img src="/assets/images/html.png" class="tech-logo w-100 px-4" alt="">
+                      <div class="text-center mt-2">
+                        <p class="fw-bold mb-0">HTML</p>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="col-6 col-sm-4 col-md-3 mt-3">
-                      <div class="tech-card" data-bs-toggle="modal" data-bs-target="#strapiModal">
-                        <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/strapi.png" class="tech-logo w-100 px-4" alt="">
-                        <div class="text-center mt-2">
-                          <p class="fw-bold mb-0">Strapi</p>
-                        </div>
+                  <div class="col-6 col-sm-4 col-md-3 mt-3">
+                    <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
+                      <img src="/assets/images/css.png" class="tech-logo w-100 px-4" alt="">
+                      <div class="text-center mt-2">
+                        <p class="fw-bold mb-0">CSS</p>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="col-6 col-sm-4 col-md-3 mt-3">
-                      <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
-                        <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/bootstrap.jpg" class="tech-logo w-100 px-4" alt="">
-                        <div class="text-center mt-2">
-                          <p class="fw-bold mb-0">Bootstrap</p>
-                        </div>
+                  <div class="col-6 col-sm-4 col-md-3 mt-3">
+                    <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
+                      <img src="/assets/images/sass.png" class="tech-logo w-100 px-4" alt="">
+                      <div class="text-center mt-2">
+                        <p class="fw-bold mb-0">SCSS</p>
                       </div>
                     </div>
+                  </div>
 
-                    <h3 class="text-secondary fs-20 mb-0 mt-5">Autres technologies utilisées</h3>
-                    
-                    <div class="col-6 col-sm-4 col-md-3 mt-3">
-                      <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
-                        <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/python.png" class="tech-logo w-100 px-4" alt="">
-                        <div class="text-center mt-2">
-                          <p class="fw-bold mb-0">Python</p>
-                        </div>
+                  
+                  <div class="col-6 col-sm-4 col-md-3 mt-3">
+                    <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
+                      <img src="/assets/images/jquery.svg" class="tech-logo w-100 px-4" alt="">
+                      <div class="text-center mt-2">
+                        <p class="fw-bold mb-0">JQuery</p>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="col-6 col-sm-4 col-md-3 mt-3">
-                      <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
-                        <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/html.png" class="tech-logo w-100 px-4" alt="">
-                        <div class="text-center mt-2">
-                          <p class="fw-bold mb-0">HTML</p>
-                        </div>
+                  <div class="col-6 col-sm-4 col-md-3 mt-3">
+                    <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
+                      <img src="/assets/images/js.png" class="tech-logo w-100 px-4" alt="">
+                      <div class="text-center mt-2">
+                        <p class="fw-bold mb-0">Javascript</p>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="col-6 col-sm-4 col-md-3 mt-3">
-                      <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
-                        <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/css.png" class="tech-logo w-100 px-4" alt="">
-                        <div class="text-center mt-2">
-                          <p class="fw-bold mb-0">CSS</p>
-                        </div>
+                  <div class="col-6 col-sm-4 col-md-3 mt-3">
+                    <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
+                      <img src="/assets/images/symfony.svg" class="tech-logo w-100 px-4" alt="">
+                      <div class="text-center mt-2">
+                        <p class="fw-bold mb-0">Symfony</p>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="col-6 col-sm-4 col-md-3 mt-3">
-                      <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
-                        <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/sass.png" class="tech-logo w-100 px-4" alt="">
-                        <div class="text-center mt-2">
-                          <p class="fw-bold mb-0">SCSS</p>
-                        </div>
+                  <div class="col-6 col-sm-4 col-md-3 mt-3">
+                    <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
+                      <img src="/assets/images/php.png" class="tech-logo w-100 mt-3 px-4 px-sm-3" alt="">
+                      <div class="text-center mt-2">
+                        <p class="fw-bold mb-0">PHP</p>
                       </div>
                     </div>
+                  </div>
 
-                    
-                    <div class="col-6 col-sm-4 col-md-3 mt-3">
-                      <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
-                        <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/jquery.svg" class="tech-logo w-100 px-4" alt="">
-                        <div class="text-center mt-2">
-                          <p class="fw-bold mb-0">JQuery</p>
-                        </div>
+                  <hr class="mt-5">
+
+                  <h3 class="text-secondary fs-20 mb-0 mt-4">Outils que j'utilise pour le développement</h3>
+                  <div class="col-6 col-sm-4 col-md-3 mt-3">
+                    <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
+                      <img src="/assets/images/git.png" class="tech-logo w-100 px-4" alt="">
+                      <div class="text-center mt-2">
+                        <p class="fw-bold mb-0">Git</p>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="col-6 col-sm-4 col-md-3 mt-3">
-                      <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
-                        <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/js.png" class="tech-logo w-100 px-4" alt="">
-                        <div class="text-center mt-2">
-                          <p class="fw-bold mb-0">Javascript</p>
-                        </div>
+                  <div class="col-6 col-sm-4 col-md-3 mt-3">
+                    <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
+                      <img src="/assets/images/gitlab.png" class="tech-logo w-100 px-4" alt="">
+                      <div class="text-center mt-2">
+                        <p class="fw-bold mb-0">GitLab</p>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="col-6 col-sm-4 col-md-3 mt-3">
-                      <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
-                        <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/symfony.svg" class="tech-logo w-100 px-4" alt="">
-                        <div class="text-center mt-2">
-                          <p class="fw-bold mb-0">Symfony</p>
-                        </div>
+                  <div class="col-6 col-sm-4 col-md-3 mt-3">
+                    <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
+                      <img src="/assets/images/github.png" class="tech-logo w-100 px-4" alt="">
+                      <div class="text-center mt-2">
+                        <p class="fw-bold mb-0">GitHub</p>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="col-6 col-sm-4 col-md-3 mt-3">
-                      <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
-                        <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/php.png" class="w-100 mt-3 px-4 px-sm-3" alt="">
-                        <div class="text-center mt-2">
-                          <p class="fw-bold mb-0">PHP</p>
-                        </div>
+                  <div class="col-6 col-sm-4 col-md-3 mt-3">
+                    <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
+                      <img src="/assets/images/vscode.png" class="tech-logo w-100 px-4" alt="">
+                      <div class="text-center mt-2">
+                        <p class="fw-bold mb-0">VScode</p>
                       </div>
                     </div>
+                  </div>
 
-                    <h3 class="text-secondary fs-20 mb-0 mt-5">Outils de versionning que j'utilise</h3>
-                    <div class="col-6 col-sm-4 col-md-3 mt-3">
-                      <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
-                        <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/git.png" class="tech-logo w-100 px-4" alt="">
-                        <div class="text-center mt-2">
-                          <p class="fw-bold mb-0">Git</p>
-                        </div>
+                  <div class="col-6 col-sm-4 col-md-3 mt-3">
+                    <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
+                      <img src="/assets/images/macos.png" class="tech-logo w-100 px-4" alt="">
+                      <div class="text-center mt-2">
+                        <p class="fw-bold mb-0">MacOS</p>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="col-6 col-sm-4 col-md-3 mt-3">
-                      <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
-                        <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/gitlab.png" class="tech-logo w-100 px-4" alt="">
-                        <div class="text-center mt-2">
-                          <p class="fw-bold mb-0">GitLab</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-sm-4 col-md-3 mt-3">
-                      <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
-                        <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/github.png" class="tech-logo w-100 px-4" alt="">
-                        <div class="text-center mt-2">
-                          <p class="fw-bold mb-0">GitHub</p>
-                        </div>
+                  <div class="col-6 col-sm-4 col-md-3 mt-3">
+                    <div class="tech-card" data-bs-toggle="modal" data-bs-target="#rubyModal">
+                      <img src="/assets/images/ubuntu.png" class="tech-logo w-100 px-4" alt="">
+                      <div class="text-center mt-2">
+                        <p class="fw-bold mb-0">Ubuntu</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center section" id="technos">
+        <div class="col-12 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-7">
+            <div class="container-fluid">
+              <h1 class="fs-25 fw-5">Clients pour qui j'ai déja travaillé</h1>
+              <div class="little-separator"></div>
+              
+              <div class="row mt-5">
+                <div class="col-6">
+                  <div class="px-3 d-flex justify-content-center c-image-container">
+                    <img src="/assets/images/bosch.png" class="c-logo w-100" alt="">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="px-3 d-flex justify-content-center c-image-container">
+                    <img src="/assets/images/mainsdargent.png" class="c-logo w-100" alt="">
+                  </div>
+                </div>
+                <div class="col-6 c-wrapper">
+                  <div class="px-3 d-flex justify-content-center c-image-container">
+                    <img src="/assets/images/ocb.png" class="c-logo w-100" alt="">
+                  </div>
+                </div>
+                <div class="col-6 c-wrapper">
+                  <div class="px-3 d-flex justify-content-center c-image-container">
+                    <img src="/assets/images/sm.png" class="c-logo w-100 mt-3" alt="" style="max-width: 300px !important;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -230,11 +296,11 @@
                 <div class="col-12 col-lg-4 text-center">
                   <div class="d-flex d-lg-block justify-content-center h-100 align-items-center mt-0 mt-lg-5">
                    
-                      <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/rails.png" class="img-small" alt="">
+                      <img src="/assets/images/rails.png" class="img-small" alt="">
                       <div class="horizontal-separator d-block d-lg-none"></div>
                       <div><div class="vertical-separator d-none d-lg-block"></div></div>
                       
-                      <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/ruby2.png" class="img-small" alt="">
+                      <img src="/assets/images/ruby2.png" class="img-small" alt="">
                    
                   </div>
                 </div>
@@ -318,7 +384,7 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-12 col-lg-4 text-center">
-                    <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/strapi.png" class="img-small" alt="">
+                    <img src="/assets/images/strapi.png" class="img-small" alt="">
                 </div>
                 <div class="col-12 col-lg-8 mt-3 mt-lg-0">
                   <p class="p-2">
@@ -355,6 +421,30 @@
         </div>
       </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+      $('.nav-link').on('click',function() {
+        $('.navbar-collapse').collapse('hide');
+      });
+
+      $('.navbar-brand').on('click',function() {
+        $('.navbar-collapse').collapse('hide');
+      });
+
+      $(document).ready(function() {
+        $('a[href^="#"]').on('click', function(event) {
+          var target = $($(this).attr('href'));
+          if(target.length) {
+            event.preventDefault();
+            $('html, body').animate({
+              scrollTop: target.offset().top - 40
+            }, 0);
+          }
+        });
+      });
+      
+    </script>
   </body>
 </html>

@@ -1,5 +1,7 @@
 $primary: #1a202c;
 
+body { padding-top: 50px; }
+
 // loop for font weight 1 to 100
 @for $i from 1 through 9 {
   .fw-#{$i} {
@@ -35,7 +37,7 @@ nav{
 
 .section{
   border-bottom: 1px solid #e5e7eb;
-  padding: 50px 0px;
+  padding: 40px 0px;
 }
 
 .btn{
@@ -51,12 +53,19 @@ nav{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .tech-card:hover{
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   transform: scale(1.05);
+}
+
+.tech-info:hover{
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.15);
 }
 
 .tech-card .text-center {
@@ -87,14 +96,14 @@ th {
 }
 
 .vertical-separator{
-  border-right: 1px solid red;
+  border-right: 3px solid red;
   height: 50px;
   width: 0px;
   margin: 0 auto;
 }
 
 .horizontal-separator{
-  border-bottom: 1px solid red;
+  border-bottom: 3px solid red;
   width: 50px;
   margin: auto 0;
 }
@@ -105,7 +114,152 @@ th {
 
 .tech-logo{
   max-width: 130px;
-  min-width: 90px;
   margin: 0 auto;
+}
 
+.c-logo{
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.tech-info{
+  // on top right of the card
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.pre-img{
+  max-width: 75%;
+}
+
+$light-blue: #95D3FB;
+
+.bg-light-blue {
+  background-color: $light-blue !important;
+}
+
+.text-light-blue {
+  color: $light-blue !important;
+}
+
+.border-light-blue {
+  border-color: $light-blue !important;
+}
+
+.btn-light-blue {
+  background-color: $light-blue;
+  color: #fff;
+  &:hover {
+    background-color: darken($light-blue, 10%);
+  }
+}
+
+.btn-outline-light-blue {
+  border-color: $light-blue;
+  color: $light-blue;
+  &:hover {
+    background-color: $light-blue;
+    color: #fff;
+  }
+}
+
+.alert-light-blue {
+  background-color: $light-blue;
+  color: #fff;
+  a {
+    color: #fff;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.table-light-blue {
+  th,
+  td {
+    background-color: $light-blue;
+    color: #fff;
+  }
+}
+
+.list-group-item-light-blue {
+  background-color: $light-blue;
+  color: #fff;
+  &:hover {
+    background-color: darken($light-blue, 10%);
+  }
+}
+
+.badge-light-blue {
+  background-color: $light-blue;
+  color: #fff;
+}
+
+.dropdown-item-light-blue {
+  background-color: $light-blue;
+  color: #fff;
+  &:hover {
+    background-color: darken($light-blue, 10%);
+    color: #fff;
+  }
+}
+
+.form-control-light-blue {
+  background-color: $light-blue;
+  color: #fff;
+}
+
+.custom-select-light-blue {
+  background-color: $light-blue;
+  color: #fff;
+}
+
+.nav-link-light-blue {
+  color: $light-blue;
+  &:hover {
+    color: darken($light-blue, 10%);
+  }
+}
+
+.progress-bar-light-blue {
+  background-color: $light-blue;
+}
+
+.carousel-indicator-light-blue {
+  background-color: $light-blue;
+}
+
+.c-image-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+
+  img {
+    filter: grayscale(100%);
+    transition: all 0.5s ease-in-out;
+  }
+
+  &:hover img {
+    filter: grayscale(0%);
+  }
+}
+
+$c-wrapper-margin: 7%;
+
+.c-wrapper {
+  margin-top: $c-wrapper-margin;
+  
+  @media only screen and (max-width: 768px) {
+    margin-top: calc(#{$c-wrapper-margin} - 2%);
+  }
+  
+  @media only screen and (max-width: 480px) {
+    margin-top: calc(#{$c-wrapper-margin} - 4%);
+  }
 }
