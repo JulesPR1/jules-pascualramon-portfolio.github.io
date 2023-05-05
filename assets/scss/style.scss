@@ -44,13 +44,16 @@ nav{
 .tech-card{
   background-color: #ffffff;
   border-radius: 16px;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   padding: 1em 1.5em;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+}
+
+.c-shadow{
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 
 .tech-card:hover{
@@ -281,4 +284,8 @@ $c-wrapper-margin: 7%;
 
 .fa-linkedin:hover {
   color: #0077b5;
+}
+
+.logo-mini{
+  width: 30px;
 }
