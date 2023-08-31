@@ -1,5 +1,6 @@
 body {
   padding-top: 50px;
+  overflow-x: hidden;
 }
 
 .fw-1 {
@@ -4692,12 +4693,6 @@ th {
 
 .logo-mini {
   width: 30px;
-}
-
-.exp-item {
-  height: 40px;
-  margin-bottom: 1em;
-  margin-top: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */
