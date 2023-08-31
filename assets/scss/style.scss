@@ -1,8 +1,12 @@
 $primary: #1a202c;
 
-body { 
+
+html, body {
   padding-top: 50px;
   overflow-x: hidden;
+}
+body {
+  position: relative
 }
 
 // loop for font weight 1 to 100
