@@ -4,6 +4,7 @@ html, body {
 
 body {
   position: relative;
+  padding-top: 50px;
 }
 
 .fw-1 {
