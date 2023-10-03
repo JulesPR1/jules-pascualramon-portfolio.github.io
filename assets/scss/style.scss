@@ -296,3 +296,43 @@ $c-wrapper-margin: 7%;
 .logo-mini{
   width: 30px;
 }
+
+.day {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.week{
+position: relative;
+width: 12px;
+}
+
+.month {
+text-align: center;
+font-weight: bold;
+font-size: .8em;
+position: absolute;
+top: -13%;
+}
+
+.gray {
+background-color: #e6e6e6;
+}
+
+.light-blue {
+  background-color: #add8e6;
+}
+
+.medium-blue {
+  background-color: #6495ed;
+}
+
+.dark-blue {
+  background-color: #0000cd;
+}
+
+.very-dark-blue {
+  background-color: #00008b;
+}
