@@ -60,7 +60,7 @@ var weeks = Math.floor((today - oneYearAgo) / (7 * 24 * 60 * 60 * 1000));
 // Fetch data from the given URL
 $.ajax({
   url: "https://git.isee-u.fr/users/jules/calendar.json",
-  dataType: "json",
+  dataType: "jsonp",
   success: function (data) {
     for (var i = 0; i < weeks; i++) {
       var weekDiv = $('<div class="week"></div>');
