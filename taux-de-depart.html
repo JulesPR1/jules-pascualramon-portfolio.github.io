@@ -86,6 +86,19 @@
             title: {
                 text: 'Taux de départ en vacances (au moins 4 nuits consécutives à la montagne à l’hiver 2022-2023)',
                 align: 'center'
+            },
+            tooltip: {
+                y: {
+                    formatter: function(val) {
+                        return val + '%';
+                    },
+                    title: {
+                        formatter: function() {
+                            return '';
+                        }
+                    }
+                  }
+                
             }
         };
 
