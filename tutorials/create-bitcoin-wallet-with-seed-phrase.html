@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="yl3QqEeTBrOblt2nRrMnHJo3paNxhVxvJpRK6Vczehc" />
+    <title>Jules PASCUAL-RAMON - Portfolio</title>
+    <link rel="shortcut icon" type="image/png" href="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/logo.png?">
+    <link href="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/css/style.css">
+    <script src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/js/icons.js" crossorigin="anonymous"></script>
+    <script src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/js/jquery.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/js/app.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar navbar-expand-sm bg-light fixed-top d-flex d-sm-none">
+      <div class="container-fluid">
+        <a class="navbar-brand d-block d-sm-none" href="#">Jules PASCUAL-RAMON</a>
+        <button class="navbar-toggler shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#parcours">Parcours et Expériences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#technos">Technologies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projets</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="fixed-top d-flex justify-content-center d-none d-sm-block py-2 bg-light">
+      <div class="col-12 col-sm-12 col-md-9 col-lg-8 col-xl-7 col-xxl-7 mx-auto">
+        <div class="container-fluid d-flex align-items-md-center justify-content-left">
+          <a class="navbar-brand" href="#">Jules PASCUAL-RAMON</a>
+          <a class="nav-link mx-2" href="#parcours">Parcours et Expériences</a>
+          <a class="nav-link mx-2" href="#technos">Technologies</a>
+          <!-- <a class="nav-link mx-2" href="#customers">Clients</a> -->
+          <a class="nav-link mx-2" href="#projects">Projets</a>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========== PRESENTATION ========== -->
+    <div class="container-fluid">
+      <div class="row justify-content-center section pt-4" id="presentation">
+        <div class="col-12 col-sm-12 col-md-9 col-lg-8 col-xl-7 col-xxl-7">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 order-2 order-md-1">
+                  <h1 class="fs-25 fw-5">Tutoriel #1</h1>
+                  <div class="little-separator"></div>
+              
+                  <div>
+                    <h1 class="fs-30 fw-6 mt-3 mb-1">Créer un wallet Bitcoin en python (avec seed phrase) et faire une première transaction</h1>
+                    <i class="fw-2">Jules PASCUAL-RAMON</i><br>
+                    <span class="fw-2">Le 04/09/2024</span>
+
+                    <div class="my-4">
+                      <h2 class="fs-25 mt-3">Sommaire</h2>
+                      <ul>
+                        <li><a href="#1">Introduction</a></li>
+                        <li><a href="#2">Prérequis</a></li>
+                        <li><a href="#3">Générer la seed phrase</a></li>
+                        <li><a href="#4">Créer un wallet Bitcoin</a></li>
+                        <li><a href="#5">Faire une première transaction</a></li>
+                        <li><a href="#6">Récupérer sa clé privée depuis sa seed phrase</a></li>
+                        <li><a href="#7">Conclusion</a></li>
+                      </ul>
+                    </div>
+                  
+                    
+                    <div class="mt-3">
+                      <h2 class="fs-25" id="1">Introduction</h2>
+
+                      <p class="mt-1">
+                        Les wallets Bitcoin sont des applications qui permettent de gérer les clés privées et les adresses Bitcoin. 
+                        Posséder un wallet permet d'envoyer et de recevoir des bitcoins, ainsi que de consulter son solde. <br><br>
+                        
+                        Dans ce tutoriel, nous allons apprendre à créer un wallet Bitcoin en Python, 
+                        à générer une seed phrase et une clé privée à partir de celle-ci, 
+                        ce qui permet de restaurer un wallet en cas de perte des clés. <br><br>
+                        
+                        Nous verrons également comment interagir avec la blockchain Bitcoin pour effectuer une première transaction.
+                      </p>
+
+                      <hr id="2">
+
+                      <h2 class="mt-3 fs-25">Prérequis</h2>
+                      
+                      <p class="mt-1">Pour suivre ce tutoriel, vous aurez besoin d'installer les libraries 
+                        <a target="_blank" href="https://pypi.org/project/bit/">bit</a>, 
+                        <a target="_blank" href="https://pypi.org/project/bip32utils/">bip32utils</a> et
+                        <a target="_blank" href="https://pypi.org/project/mnemonic/">mnemonic</a>. Vous pouvez les installer en utilisant pip :
+                      </p>
+
+                      <div class="code-container">
+                        <button class="copy-btn">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                        <code class="code-block">pip install bit bip32utils mnemonic</code>
+                      </div>
+                    </div>
+
+                    <hr id="3">
+                     
+                    <div class="mt-3">
+                      <h2 class="fs-25">Générer la seed phrase</h2>
+
+                      <p class="mt-1">Une seed phrase est une série de mots qui permet de générer une clé privée. 
+                        Elle est utilisée pour restaurer un wallet en cas de perte de clés. Nous allons premièrement générer la seed
+                        phrase, puis nous créérons le wallet via celle-ci.
+                      </p>
+
+                      <div class="card border-danger my-4">
+                        <div class="card-body">
+                          <p class="m-0">
+                            <i class="fas fa-exclamation-triangle me-2"></i> Il est très important de conserver votre seed phrase en lieu sûr et hors ligne. C'est le principe du stockage à froid (cold storage).
+                          </p>
+                        </div>
+                      </div>
+                      
+                      <p class="mb-4">Voici un exemple de code pour générer une seed phrase en python :</p>
+
+                      <div class="code-container">
+                        <button class="copy-btn">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                        <code class="code-block">
+                          from mnemonic import Mnemonic <br>
+                          import bip32utils <br>
+                          from bit import PrivateKey, PrivateKeyTestnet<br><br>
+                          
+                          mnemo = Mnemonic("english") <br><br>
+                          
+                          # 256 bits pour 24 mots de récupération <br>
+                          mnemonic_phrase = mnemo.generate(strength=256)  <br>
+                          print("Seed phrase:", mnemonic_phrase)
+
+                        </code>
+                      </div>
+                      
+                      <p class="my-4">
+                        Une fois cela fait, on peut alors convertir la seed phrase en une seed cryptographique, puis en clé maîtresse BIP32.
+                      </p>
+          
+                      <div class="code-container">
+                        <button class="copy-btn">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                        <code class="code-block">
+                          seed = mnemo.to_seed(mnemonic_phrase, passphrase="") <br>
+                          bip32_root_key_obj = bip32utils.BIP32Key.fromEntropy(seed)
+                        </code>
+                      </div>
+
+                      <div class="card mt-4">
+                        <div class="card-body">
+                          <p>
+                            BIP32 est une spécification qui permet de <strong>générer une hiérarchie de clés</strong> à partir d'une seed cryptographique unique. 
+                            Cette spécification est utilisée pour créer un wallet déterministe hiérarchique (HD Wallet), 
+                            capable de générer des clés filles à partir de la clé maîtresse facilitant ainsi la gestion et la récupération des clés. 
+                          </p>
+                          
+                          <p>
+                            <i class="fas fa-info-circle me-2"></i><i>Ce processus est similaire à celui utilisé par les wallets matériels (hard-wallets) comme les Ledger !</i>    
+                          </p>
+
+                          <p class="my-0">Pour en savoir plus sur les HD Wallets, vous pouvez consulter <a target="_blank" href="https://www.ledger.com/academy/crypto/what-are-hierarchical-deterministic-hd-wallets">ce cours</a> proposé par Ledger.</p> 
+                        </div>
+                      </div>
+
+                      <p class="mt-4">
+                        Cette clé maîtresse BIP32 est donc le point de départ pour dériver une série de clés filles. 
+                      </p>
+
+                      <p class="mb-4">Dérivation de la première clé fille :</p>
+
+                      <div class="code-container">
+                        <button class="copy-btn">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                        <code class="code-block">
+                          bip32_child_key_obj = (<br>
+                          bip32_root_key_obj<br>
+                            .ChildKey(44 + bip32utils.BIP32_HARDEN)  # 44'<br>
+                            .ChildKey(0 + bip32utils.BIP32_HARDEN)   # 0'<br>
+                            .ChildKey(0 + bip32utils.BIP32_HARDEN)   # 0'<br>
+                            .ChildKey(0)                             # 0<br>
+                            .ChildKey(0)                             # 0<br>
+                          )
+                        </code>
+                      </div>
+
+                      <p class="mt-4">Cette manipulation permet de dériver une clé fille en utilisant la clé maîtresse BIP32. On utilise le chemin de dérivation m/44'/0'/0'/0/0 pour obtenir la clé fille, car il suit le standard BIP44 qui est largement utilisé par les wallets Bitcoin.</p>
+                    
+                      <p>On peut alors obtenir la clé privée au format WIF (Wallet Import Format) de cette clé fille :</p>
+
+                      <div class="code-container">
+                        <button class="copy-btn">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                        <code class="code-block">
+                          private_key_wif = bip32_child_key_obj.WalletImportFormat() <br>
+                          print("Private key WIF:", private_key_wif)
+                        </code>
+                      </div>
+
+                      <p class="mt-4">Et voilà, vous avez généré une seed phrase et une clé privée à partir de celle-ci !</p>
+
+                      <hr id="4">
+
+                      <h2 class="mt-3 fs-25">Créer un wallet Bitcoin</h2>
+
+                      <p class="mt-1">Maintenant que nous avons notre clé privée WIF ainsi que nos mots de récupération, nous pouvons créer un wallet Bitcoin en utilisant la library <strong>bit</strong> :</p>
+
+                      <div class="code-container">
+                        <button class="copy-btn">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                        <code class="code-block">                          
+                          bit_private_key = PrivateKey(private_key_wif)
+                        </code>
+                      </div>
+                      
+                      <p class="mt-4">Et c'est tout ! Vous avez maintenant un wallet Bitcoin fonctionnel manipulable via du code python.</p>
+
+                      <p>Si vous souhaitez tester le wallet avec des faux bitcoins via le testnet Bitcoin, vous pouvez utiliser la classe <code>PrivateKeyTestnet</code> à la place de <code>PrivateKey</code>.</p>
+                      
+                      <p>Vous pouvez print les informations utiles telles que la clé privée, <strong>la clé publique</strong> qui fera office d'<strong>adresse de reception</strong> de votre wallet, et le solde de votre wallet en différentes devises :</p>
+                      
+                      <div class="code-container">
+                        <button class="copy-btn">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                        <code class="code-block">                          
+                          print("Private Key (WIF):", bit_private_key.to_wif()) <br>
+                          print("Public Key:", bit_private_key.address) <br><br>
+
+                          print(f"Balance: {bit_private_key.get_balance('satoshi')} SATS soit {bit_private_key.get_balance('usd')}$")
+                        </code>
+                      </div>
+
+                      <hr id="5">
+
+                      <h2 class="mt-3 fs-25"">Faire une première transaction</h2>
+
+                      <p class="mt-1">Pour effectuer une transaction, il suffit d'utiliser la méthode <code>send</code> de l'objet <code>PrivateKey</code> :</p>
+
+                      <div class="code-container">
+                        <button class="copy-btn">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                        <code class="code-block">                          
+                          destination = "ADRESSE_DE_DESTINATION" <br>
+                          amount = "MONTANT_A_ENVOYER_EN_SATOSHIS" <br><br>
+
+                          tx_hash = bit_private_key.send([(destination, amount, 'satoshi')])<br><br>
+
+                          print(f"Transaction Hash: {tx_hash}")
+                        </code>
+                      </div>
+
+                      <p class="mt-4">Remplacez <code>ADRESSE_DE_DESTINATION</code> par l'adresse Bitcoin du destinataire, et <code>MONTANT_A_ENVOYER_EN_SATOSHIS</code> par le montant à envoyer en satoshis (1 BTC = 100 000 000 satoshis).</p>
+
+                      <p>Si vous tentez d'envoyer plus de bitcoins que vous n'en avez, la transaction sera rejetée et le script lèvera une exception.</p>
+
+                      <p>Et voilà, vous avez effectué votre première transaction Bitcoin !</p>
+
+                      <p>Vous pouvez vérifier la transaction sur un explorateur de blocs tel que <a target="_blank" href="https://www.blockchain.com/">Blockchain.com</a> en utilisant le hash de la transaction stocké dans la variable <code>tx_hash</code>.</p>
+
+                      <hr id="6">
+
+                      <h2 class="mt-3 fs-25">Récupérer sa clé privée depuis sa seed phrase</h2>
+
+                      <p class="mt-1">Si vous avez malencontreusement perdu votre clé privée, vous pouvez la récupérer en utilisant votre seed phrase. 
+                        Il suffit de re-utiliser le code précédent mais en fournissant votre seed plutot que de la générer. 
+
+                      <div class="code-container">
+                        <button class="copy-btn">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                        <code class="code-block">
+                          mnemo = Mnemonic("english")<br>
+                          seed = mnemo.to_seed("VOTRE_SEED_PHRASE", passphrase="")<br>
+                          bip32_root_key_obj = bip32utils.BIP32Key.fromEntropy(seed)<br><br>
+
+                          bip32_child_key_obj = (<br>
+                              bip32_root_key_obj<br>
+                              .ChildKey(44 + bip32utils.BIP32_HARDEN)  # 44'<br>
+                              .ChildKey(0 + bip32utils.BIP32_HARDEN)   # 0'<br>
+                              .ChildKey(0 + bip32utils.BIP32_HARDEN)   # 0'<br>
+                              .ChildKey(0)                             # 0<br>
+                              .ChildKey(0)                             # 0<br>
+                          )<br><br>
+                          
+                          private_key_wif = bip32_child_key_obj.WalletImportFormat()<br>
+                          print("Private key WIF (from seed phrase):", private_key_wif)
+                        </code>
+                      </div>
+
+                      <p class="mt-4">Remplacez <code>VOTRE_SEED_PHRASE</code> par votre seed phrase, lancez le script et vous retrouverez votre clé privée !</p>
+                    
+                      <hr id="7">
+
+                      <h2 class="mt-3 fs-25">Conclusion</h2>
+                      
+                      <p class="mt-1">Dans ce tutoriel, nous avons appris à créer un wallet Bitcoin en Python, à générer une seed phrase et une clé privée à partir de celle-ci, 
+                        et à effectuer une première transaction en utilisant le wallet créé.
+                      </p>
+
+                      <p>Nous avons également vu comment récupérer une clé privée à partir de la seed phrase, ce qui permet de restaurer le wallet en cas de perte de clés.</p>
+                    
+                      <p>Vous savez maintenant comment créer un wallet Bitcoin en Python et comment interagir avec la blockchain via du code.</p>
+
+                      <p>Si vous avez des questions ou des retours, n'hésitez pas à m'en faire part en m'envoyant un message sur <a href="https://www.linkedin.com/in/jules-pascual-ramon-1b9707220/" target="_blank">LinkedIn</a> ou par mail à <a href="mailto:j.pascualramon.etude@gmail.com"> j.pascualramon.etude@gmail.com</a>.</p>
+                    
+                      <p>Merci d'avoir suivi ce tutoriel qui est le premier que je publie.</p>
+
+                      <p>À bientôt !</p>
+                      
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="d-flex my-4">
+                            <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/jules-pp.png" alt="Jules PASCUAL-RAMON" class="img-fluid rounded-circle border border-2 border-dark" style="width: 100px; height: 100px;">
+                         
+                            <p class="ms-3">
+                              <strong>Jules PASCUAL-RAMON</strong><br>
+                              Développeur Web chez <a href="https://www.isee-u.fr/" target="_blank">ISEE-U</a>
+                            </p>
+                          </div>
+                        </div>
+                        
+                        <div class="col-12 mt-2">
+                          <div>
+                            <i class="fab fa-bitcoin fs-20 me-1" style="color: #f79727;"></i> Un café pour me remercier ?
+                            <br> 
+                            <div class="d-flex">
+                              <strong>bc1qk837uakg4f0vrpypc3drnhxln5rphnvj02c2hy</strong> 
+                              <button class="ms-2 btn btn-outline-success btn-sm wallet-copy">
+                                <i class="fas fa-copy"></i>
+                              </button>
+                            </div>
+
+                            <button class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#qr-modal"><i class="fas fa-qrcode me-1"></i> Voir le QR Code</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg- text-start">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-4 offset-lg-1 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">À propos de moi</h5>
+          <p>
+            Je suis un développeur web , spécialisé dans le développement back-end. J'ai commencé à développer en 2019, et j'ai depuis réalisé plusieurs projets professionnels et personnels listés sur ce portfolio.
+          </p>
+        </div>
+
+        <div class="col-lg-3 offset-lg-1 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Liens utiles</h5>
+  
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#" class="text-dark">Accueil</a>
+            </li>
+            <li>
+              <a href="#parcours" class="text-dark">Parcours et Expériences</a>
+            </li>
+            <li>
+              <a href="#technos" class="text-dark">Technologies</a>
+            </li>
+            <!-- <li>
+              <a href="#customers" class="text-dark">Clients</a>
+            </li> -->
+            <li>
+              <a href="#projects" class="text-dark">Projets</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Réseaux</h5>
+          <div class="d-flex justify-content-start  mt-2">
+            <a href="https://git.isee-u.fr/jules" target="_blank" class="mx-2 text-dark"><i class="fa fa-gitlab fs-21"></i></a>
+            <a href="https://github.com/JulesPR1" target="_blank" class="mx-2 text-dark"><i class="fa fa-github fs-21"></i></a>
+            <a href="https://www.linkedin.com/in/jules-pascual-ramon-1b9707220/" target="_blank" class="mx-2 text-dark"><i class="fa fa-linkedin fs-21"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.1);">
+      © 2023 Jules PASCUAL-RAMON | Tous droits réservés
+    </div>
+  </footer>
+
+
+  <div class="modal fade" id="qr-modal" tabindex="-1" aria-labelledby="qr-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <div class="d-flex justify-content-center">
+            <strong>bc1qk837uakg4f0vrpypc3drnhxln5rphnvj02c2hy</strong>
+            <button class="ms-2 btn btn-outline-success btn-sm wallet-copy">
+              <i class="fas fa-copy"></i>
+            </button>
+          </div>
+
+          <div class="d-flex w-100 justify-content-center">
+            <img src="https://julespr1.github.io/jules-pascualramon-portfolio.github.io/assets/images/wallet-qr.png" alt="qr code" class="img-fluid mt-3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>

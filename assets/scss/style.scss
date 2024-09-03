@@ -1,3 +1,6 @@
+// to compile to css: sass assets/scss/style.scss assets/css/style.css
+// to watch for changes: sass --watch assets/scss/style.scss assets/css/style.css
+
 $primary: #1a202c;
 
 
@@ -335,4 +338,41 @@ background-color: #e6e6e6;
 
 .very-dark-blue {
   background-color: #00008b;
+}
+
+.code-container {
+  position: relative;
+  display: inline-block;
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 5px;
+  padding-right: 60px;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.copy-btn:hover {
+  background-color: #e5e5e5;
+}
+
+.copy-btn:active {
+  background-color: #d5d5d5;
+}
+
+.code-block {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  color: #333;
 }

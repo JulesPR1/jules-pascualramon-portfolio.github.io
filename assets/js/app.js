@@ -18,8 +18,42 @@ $(document).ready(function() {
       }, 0);
     }
   });
-});
 
+  $('.copy-btn').on('click', function() {
+    console.log('click');
+    var codeBlock = $(this).parent().find('code').text();
+    console.log(codeBlock);
+
+    // Copy codeBlock to clipboard
+    navigator.clipboard.writeText(codeBlock).then(() => {
+        var icon = $(this).find('i');
+
+        // Replace the copy icon with the check icon
+        icon.removeClass('fa-copy').addClass('fa-check');
+
+        // After 1 second, revert back to the copy icon
+        setTimeout(function() {
+            icon.removeClass('fa-check').addClass('fa-copy');
+        }, 1000);
+    });
+  });
+
+  $(".wallet-copy").on('click', function() {
+    var wallet = "bc1qk837uakg4f0vrpypc3drnhxln5rphnvj02c2hy";
+
+    navigator.clipboard.writeText(wallet).then(() => {
+      var icon = $(this).find('i');
+
+      // Replace the copy icon with the check icon
+      icon.removeClass('fa-copy').addClass('fa-check');
+
+      // After 1 second, revert back to the copy icon
+      setTimeout(function() {
+          icon.removeClass('fa-check').addClass('fa-copy');
+      }, 1000);
+    });
+  });
+});
 
 var navbarLinks = $(".nav-link[href!='#']");
 
